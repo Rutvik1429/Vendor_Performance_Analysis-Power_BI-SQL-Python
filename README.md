@@ -275,3 +275,31 @@ This script is basically a data pipeline step:
 - **Stage 3 (Analytics & BI)**: The summary table feeds into Power BI dashboards (the one you already built).
 So this script is the bridge between raw transactional data and business insights.
 
+## Distribution plot for numaric values
+```
+# Distribution plot for numaric values
+numaric_col = df.select_dtypes(include = np.number).columns
+
+plt.figure(figsize=(15,10))
+for i ,col in enumerate(numaric_col):
+    plt.subplot(4, 4, i+1)
+    sns.histplot(df[col], kde=True, bins=30)
+    plt.title(col)
+plt.tight_layout()
+plt.savefig("distribution plot for numaric values.png", dpi=500, bbox_inches="tight")  
+plt.show()
+```
+- **Distribution Shape**
+- Shows whether the values are normally distributed (bell curve), skewed left/right, or have unusual peaks.
+- Helps check data quality and transformations needed (e.g., log scaling for skewed data).
+- **Outliers**
+- Extreme values in the histogram tails can highlight outliers in the dataset.
+- **Spread of Data**
+- The width of the histogram shows the range of values.
+- A wider spread = high variance, a narrow spread = low variance.
+- **Central Tendency**
+- The KDE curve shows where most data points are concentrated (mean/median zone).
+- **Comparing Multiple Columns**
+- Since every numeric column is plotted, you get a quick EDA overview of all numeric features.
+- Useful before applying machine learning models because it tells whether scaling or normalization is needed.
+![Distribution plot for numaric values](https://github.com/Rutvik1429/Vendor_Performance_Analysis-Power_BI-SQL-Python/blob/main/plots/distribution%20plot%20for%20numaric%20values.png)
