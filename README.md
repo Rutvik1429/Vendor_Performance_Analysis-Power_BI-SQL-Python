@@ -13,14 +13,6 @@ This Power BI dashboard provides a comprehensive analysis of vendor performance,
 - To highlight **low-performing vendors**
 
 
-## 🎯 Objectives  
-- To analyze vendor contributions to overall sales and purchases.  
-- To identify **top-performing vendors and brands** driving revenue.  
-- To evaluate **profitability** through gross profit and profit margin KPIs.  
-- To highlight **low-performing vendors and sales areas** for improvement.  
-- To track **unsold capital** that can affect cash flow efficiency.  
-
-
 ## 📌 Key KPIs  
 - **Total Sales**: $441.41M  
 - **Total Purchases**: $307.34M  
