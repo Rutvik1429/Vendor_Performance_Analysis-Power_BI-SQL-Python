@@ -4,8 +4,6 @@ This Power BI dashboard provides a comprehensive analysis of vendor performance,
   
 ![Vendor Performance Dashboard](https://github.com/Rutvik1429/Vendor_Performance_Analysis-Power_BI-SQL-Python/blob/main/Vendor_performance_report.png)
 
-This Power BI dashboard provides a comprehensive analysis of vendor performance, highlighting sales, purchases, profitability, and vendor contribution. The report enables business stakeholders to identify top-performing vendors, monitor profit margins, and track low-performing vendors to optimize vendor relationships.  
-
 ## 🎯 Objectives  
 - To analyze vendor contributions to overall sales and purchases.  
 - To identify **top-performing vendors and brands** driving revenue.  
